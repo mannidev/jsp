@@ -19,6 +19,7 @@ public class SportsTeamsRestClient
             for (Team team : sportTeams)
             {
                 System.out.println(team.getName());
+                System.out.println(team.getBadge());
             }
             
             System.out.println();

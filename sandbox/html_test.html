@@ -1,105 +1,486 @@
 
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
 
-    <style>
-        h1 {
-            color: rgba(109, 138, 190, 0.726);
-            padding-bottom: 5px;
-            text-align: center;
-            border-bottom: 1px solid rgba(220, 225, 230, 0.651);
-            text-transform: capitalize;
-        }
+<script src="https://kit.fontawesome.com/d2591e384b.js"
+	crossorigin="anonymous">
+	
+</script>
 
-        ul {
-            display: flex;
-            flex-flow: row;
-            flex-wrap: wrap;
-            justify-content: center; 
-            list-style: none;
-        }
+<style>
+.header {
+	border-bottom: 1px solid rgba(220, 225, 230, 0.651);
+	color: rgba(109, 138, 190, 0.726);
+	position: relative;
+	height: 50px;
+}
 
-        li {
-            width: 300px;
-            height: 100px;
-            color: rgba(133, 139, 231, 0.726);
-            font-size: 1.2rem;
-            font-weight: bold;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            letter-spacing: .5px;
-            border-radius: 5px;
-            white-space: nowrap;
-            margin: 20px;
-            line-height: 100PX;
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-            text-align: center;
-        }
+.back-link {
+	display: inline-block;
+	width: 50px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 20px;
+}
 
-        li:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.384);
-            color: rgb(122, 130, 243);
-            font-weight: bolder;
-            font-size: 1.4rem;
-            letter-spacing: 1px;
-        }
-    </style>
+.back-link a {
+	color: rgba(109, 138, 190, 0.726);
+	text-decoration: none;
+}
+
+.back-link a:hover {
+	color: rgba(109, 137, 190, 0.849);
+	font-size: 30px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+h1 {
+	padding-bottom: 5px;
+	text-transform: capitalize;
+	display: inline-block;
+	width: 50%;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+ul {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+li {
+	width: 300px;
+	height: 100px; 
+	border-radius: 5px; 
+	margin: 20px; 
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); 
+    position: relative;
+}
+
+li:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.384);
+	color: rgb(122, 130, 243);
+	font-weight: bolder;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+}
+
+
+li img {
+    height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+    position: absolute;
+    margin: 10px;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+li span {
+    display: inline-block;
+    width: 230px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: rgba(133, 139, 231, 0.726);
+	font-size: 1.2rem;
+	font-weight: bold;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+	letter-spacing: .5px;
+    white-space: nowrap;
+    line-height: 100px;
+    text-align: center;
+}
+</style>
 </head>
 <body>
+	
 
-    <div class="header">
-        <h1>Available Teams</h1>
-        </div>
-        <div class="body">
-        <ul>
-        <li>Armada FC</li>
-        <li>Atlanta Silberbacks</li>
-        <li>Atlanta United</li>
-        <li>Carolina RailHawks</li>
-        <li>CD Chivas USA</li>
-        <li>Chicago Fire</li>
-        <li>Chicago Red Stars</li>
-        <li>Colorado Rapids</li>
-        <li>Columbus Crew</li>
-        <li>DC United</li>
-        <li>FC Cincinnati</li>
-        <li>FC Dallas</li>
-        <li>FC Kansas City</li>
-        <li>Fort Lauderdale Strickers</li>
-        <li>Houston Dash</li>
-        <li>Houston Dynamo</li>
-        <li>Indy Eleven</li>
-        <li>L.A. Galaxy</li>
-        <li>Los Angeles FC</li>
-        <li>Minnesota United</li>
-        <li>Minnesota Untied FC</li>
-        <li>New England Rev.</li>
-        <li>New York City</li>
-        <li>New York Cosmos</li>
-        <li>New York Red Bulls</li>
-        <li>North Carolina Courage</li>
-        <li>Orlando City</li>
-        <li>Orlando Pride</li>
-        <li>Philadelphia Union</li>
-        <li>Portland Thorns</li>
-        <li>Portland Timbers</li>
-        <li>Real Salt Lake</li>
-        <li>Reign FC</li>
-        <li>San Antonio Scorpions</li>
-        <li>San Jose Earthquakes</li>
-        <li>Seattle Sounders FC</li>
-        <li>Sky Blue FC</li>
-        <li>Sporting Kansas City</li>
-        <li>Tampa Bay Rowdies</li>
-        <li>USA Women</li>
-        <li>Utah Royals FC</li>
-        <li>Washington Spirit</li>
-        <li>Western New York Flash</li>
-        </ul>
-        </div>            
+	<div class="header">
+		<div class="back-link">
+			<a href="SportsTeams.html" title="back"> <i
+				class="fa fa-arrow-left"></i>
+			</a>
+		</div>
+		<h1>Available Basketball Teams</h1>
+
+	</div>
+	<div class="body">
+		<ul>
+			<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/sqxjc51550086976.png">
+<span>Agua Caliente Clippers</span>
+</li>
+<li>
+<img src="null">
+<span>Anderson Packers</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/s4d2101573154207.png">
+<span>Atlanta Dream</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/cfcn1w1503741986.png">
+<span>Atlanta Hawks</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/uprptt1423351492.png">
+<span>Austin Spurs</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/uuwsxx1424974563.png">
+<span>Bakersfield Jam</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/ib7b931574971128.png">
+<span>Baltimore Bullets</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/051sjd1537102179.png">
+<span>Boston Celtics</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/9l5b1n1547642059.png">
+<span>Brooklyn Nets</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/urtrvt1424975246.png">
+<span>Canton Charge</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/cvsaoz1550084988.png">
+<span>Capital City Go-Go</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/xqtvvp1422380623.png">
+<span>Charlotte Hornets</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/yk7swg1547214677.png">
+<span>Chicago Bulls</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/h4e2t21552585926.png">
+<span>Chicago Sky</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/arotnp1574971225.png">
+<span>Chicago Stags</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/a2pp4c1503741152.png">
+<span>Cleveland Cavaliers</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/dox19o1574971340.png">
+<span>Cleveland Rebels</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/p4xzce1552679905.png">
+<span>Connecticut Sun</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/c4ul0t1512145103.png">
+<span>Dakota Wizards</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/yqrxrs1420568796.png">
+<span>Dallas Mavericks</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/vg11pw1552585970.png">
+<span>Dallas Wings</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/pnt2yj1545820295.png">
+<span>Delaware 87ers</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/8o8j5k1546016274.png">
+<span>Denver Nuggets</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/nhwy761573082617.png">
+<span>Denver Nuggets</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/lttwxc1550422199.png">
+<span>Detroit Falcons</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/12612u1511101660.png">
+<span>Detroit Pistons</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/tvsyty1481460344.png">
+<span>Erie BayHawks</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/cz0aik1573338637.png">
+<span>Fort Wayne Mad Ants</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/irobi61565197527.png">
+<span>Golden State Warriors</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/xyyxsr1425591426.png">
+<span>Grand Rapids Drive</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/5og2lk1487267728.png">
+<span>Greensboro Swarm</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/gwpf8a1565197425.png">
+<span>Houston Rockets</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/upvvpt1425590077.png">
+<span>Idaho Stampede</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/9xp4y31552586027.png">
+<span>Indiana Fever</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/v6jzgm1503741821.png">
+<span>Indiana Pacers</span>
+</li>
+<li>
+<img src="null">
+<span>Indianapolis Jets</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/yyc3au1574971439.png">
+<span>Indianapolis Olympians</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/izjy921524245487.png">
+<span>Iowa Energy</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/hzoove1550085389.png">
+<span>Lakeland Magic</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/mo36ks1552586082.png">
+<span>Las Vegas Aces</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/04a62j1487267932.png">
+<span>Long Island Nets</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/jv7tf21545916958.png">
+<span>Los Angeles Clippers</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/h9k44c1522963661.png">
+<span>Los Angeles D-Fenders</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/44ubym1511102073.png">
+<span>Los Angeles Lakers</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/7vor9o1552586138.png">
+<span>Los Angeles Sparks</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/txxywp1425591710.png">
+<span>Maine Red Claws</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/m64v461565196789.png">
+<span>Memphis Grizzlies</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/fzyjuf1550085820.png">
+<span>Memphis Hustle</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/5v67x51547214763.png">
+<span>Miami Heat</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/qgyz6z1503742649.png">
+<span>Milwaukee Bucks</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/rzyqoj1552586193.png">
+<span>Minnesota Lynx</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/b6a05s1503742837.png">
+<span>Minnesota Timberwolves</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/f341s31523700397.png">
+<span>New Orleans Pelicans</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/wyhpuf1511810435.png">
+<span>New York Knicks</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/few8vc1552586251.png">
+<span>New York Liberty</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/fvwuom1487268132.png">
+<span>Northern Arizona Suns</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/rpvstw1481460719.png">
+<span>Oklahoma City Blue</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/xpswpq1422575434.png">
+<span>Oklahoma City Thunder</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/txuyrr1422492990.png">
+<span>Orlando Magic</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/71545f1518464849.png">
+<span>Philadelphia 76ers</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/33p4ml1552586302.png">
+<span>Phoenix Mercury</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/qrtuxq1422919040.png">
+<span>Phoenix Suns</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/udeg361573382273.png">
+<span>Pittsburgh Ironmen</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/mbtzin1520794112.png">
+<span>Portland Trail Blazers</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/8xpwk71574971505.png">
+<span>Providence Steamrollers</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/7yujnu1487269277.png">
+<span>Raptors 905</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/1ixmdj1573340330.png">
+<span>Reno Bighorns</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/xxwsyp1425590343.png">
+<span>Rio Grande Valley Vipers</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/ilndl01520420385.png">
+<span>Rockford Lightning</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/nf6jii1511465735.png">
+<span>Sacramento Kings</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/229h3r1487267488.png">
+<span>Salt Lake City Stars</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/crit1q1511809636.png">
+<span>San Antonio Spurs</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/8lwky91574003946.png">
+<span>Santa Cruz Warriors</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/hiuw0n1552586359.png">
+<span>Seattle Storm</span>
+</li>
+<li>
+<img src="null">
+<span>Sheboygan Red Skins</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/xxwtwr1481460847.png">
+<span>Sioux Falls Skyforce</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/b3bbed1574971609.png">
+<span>St. Louis Bombers</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/trdln41573339276.png">
+<span>Texas Legends</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/fxoafk1574887613.png">
+<span>Toronto Huskies</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/9p1e5j1572041084.png">
+<span>Utah Jazz</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/iedmul1557002713.png">
+<span>Washington Capitols</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/2n9gep1552586413.png">
+<span>Washington Mystics</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/m2qhln1503743635.png">
+<span>Washington Wizards</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/7d4q2d1574887510.png">
+<span>Waterloo Hawks</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/q7aory1526836555.png">
+<span>Westchester Knicks</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/isbnf51487269460.png">
+<span>Windy City Bulls</span>
+</li>
+<li>
+<img src="https://www.thesportsdb.com/images/media/team/badge/eos6hi1550084525.png">
+<span>Wisconsin Herd</span>
+</li>
+
+		</ul>
+	</div>
 </body>
 </html>

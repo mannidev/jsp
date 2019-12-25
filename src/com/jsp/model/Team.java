@@ -190,25 +190,25 @@ public class Team
             fullName = obj.get(TeamMapKeys.FULLNAME).toString();
 
         if (obj.containsKey(TeamMapKeys.YEARFORMED))
-            yearFormed = obj.get(TeamMapKeys.YEARFORMED).toString();
+            yearFormed = obj.get(TeamMapKeys.YEARFORMED).toString().replace("\"", "");
 
         if (obj.containsKey(TeamMapKeys.SPORT))
             sport = obj.getString(TeamMapKeys.SPORT);
 
         if (obj.containsKey(TeamMapKeys.MANAGER))
-            manager = obj.get(TeamMapKeys.MANAGER).toString();
+            manager = obj.get(TeamMapKeys.MANAGER).toString().replace("\"", "");
 
         if (obj.containsKey(TeamMapKeys.COUNTRY))
             country = obj.getString(TeamMapKeys.COUNTRY);
         
         if (obj.containsKey(TeamMapKeys.BADGE))
-            badge = obj.get(TeamMapKeys.BADGE).toString();
+            badge = obj.get(TeamMapKeys.BADGE).toString().replace("\"", "");
         
         if (obj.containsKey(TeamMapKeys.BANNER))
-            banner = obj.get(TeamMapKeys.BANNER).toString();
+            banner = obj.get(TeamMapKeys.BANNER).toString().replace("\"", "");
         
         if (obj.containsKey(TeamMapKeys.WEBSITE))
-            website = obj.get(TeamMapKeys.WEBSITE).toString();
+            website = obj.get(TeamMapKeys.WEBSITE).toString().replace("\"", "");
         
         if (obj.containsKey(TeamMapKeys.DESCRIPTION))
             description = obj.get(TeamMapKeys.DESCRIPTION).toString();
