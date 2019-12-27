@@ -13,3 +13,8 @@ becomes the argument in out.print() method.
 
 ##### Directives <%@ %> #####
 used to give special instructions to the container
+
+##### Declaration <%! %> #####
+used for declaring members of the generated servlet class
+ie. both variables and methods.
+anything between the declaration tags are added to the servlet class outside the service method.
