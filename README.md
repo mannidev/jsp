@@ -5,3 +5,11 @@
 * The .class file is loaded and initialized as a servlet object
 
 
+##### Scriptlet <% %> #####
+used for writing plain old java within jsp
+
+##### Expressions <%= %> #####
+becomes the argument in out.print() method.
+
+##### Directives <%@ %> #####
+used to give special instructions to the container

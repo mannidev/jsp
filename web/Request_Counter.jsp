@@ -4,12 +4,12 @@
 <body>
 	<p>
 		Number of requests:
-		<% out.println(Counter.getCount()); %>
+		<%= Counter.getCount() %>
 	</p>
 		
 	<p>
 		Last request at: 
-		<% out.println(Counter.getTime()); %>
+		<%= Counter.getTime() %>
 	</p>
 	 
 </body>
