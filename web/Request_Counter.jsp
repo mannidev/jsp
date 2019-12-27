@@ -28,6 +28,5 @@
 	        return format.format(date);
 	    }
 	%>
-	  
 </body>
 </html>
