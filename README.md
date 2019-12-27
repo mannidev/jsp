@@ -30,4 +30,19 @@ anything between the declaration tags are added to the servlet class outside the
 
 NB: Translation and compilation occurs only once.
  
+
+##### JSP Attributes #####
+Apart from the other 3 attributes which are 
+* Application
+* Session 
+* Request
+
+ Jsp adds the **Page** attribute
  
+ 
+ scope | In Servlet | In Jsp (using implicit objects)
+  ---|---|---
+  Application | `getServletContext().setAttribute(name, obj)` | `application.setAttribute(name, obj)`
+  Request | `request.setAttribute(name, obj)` | `request.setAttribute(name, obj)`
+  session | `request.getSession().setAttribute(name, obj)` | `session.setAttribute(name, obj)`
+  page | *not applicable* | `pageContext.setAttribute(name, obj)`
