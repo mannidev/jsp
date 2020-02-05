@@ -7,12 +7,14 @@
     <style type="text/css">
       body {
 		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
 	  }
 	  
 	  .flip-card {
 	  	background-color: transparent;
 	  	width: 300px;
 	    height: 300px;
+	    margin: auto; 
 	    perspective: 1000px;
 	  }
 	  
@@ -21,6 +23,7 @@
 	  	width: 100%;
 	  	height: 100%;
 	  	text-align: center;
+	  	transition: transform 0.6s;
 	  	transform-style: preserve-3d;
 	  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	  }
@@ -47,12 +50,21 @@
   		color: white;
   		transform: rotateY(180deg);
 	  }
+	  
+	  .flip-card-front img {
+	    width:300px;
+	    height:300px;
+	  }
+	  
+	  .flip-card-back div {
+	  	vertical-align: middle;
+	  }
     </style>
     
   </head>
   
   <body>
-    <h1>You Name is...</h1>
+    <h1>Your Name is...</h1>
     <h5>Hover over the image below to see name</h5>
     
     <div class="flip-card">
@@ -63,7 +75,8 @@
         </div>
         
         <div class="flip-card-back">
-        	<h1>
+          <div>
+            <h1>
         		<%
         			String name = request.getAttribute("firstname") + " " + request.getAttribute("lastname");
         			out.println(name);
@@ -71,6 +84,7 @@
         	</h1>
         	
         	<p>What an awesome guy</p>
+          </div>
         </div>
         
       </div>
