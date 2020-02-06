@@ -5,13 +5,18 @@
          version="3.1">
          
 	<servlet>
-		<servlet-name>sports teams</servlet-name>
-		<servlet-class>com.jsp.web.SportTeams</servlet-class>
+		<servlet-name>servlet_context</servlet-name>
+		<servlet-class>com.jsp.web.ServletContextExample</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>sports teams</servlet-name>
-		<url-pattern>/teams.sh</url-pattern>
+		<servlet-name>servlet_context</servlet-name>
+		<url-pattern>/context.sh</url-pattern>
 	</servlet-mapping>
+	
+	<context-param>
+		<param-name>param</param-name>
+		<param-value>example@servletContext.com</param-value>
+	</context-param>
          
 </web-app>
