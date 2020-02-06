@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<style type="text/css">
+
+body {
+    width: 449px;
+    margin:  10px auto;
+    box-shadow: 0px 0px 0px 2px #eee;
+    text-shadow: 0 0 black;
+    height: 350px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+input[type=text] {
+	display: block;
+    width: 100%;
+    padding: 5px 0;
+    border: 1px solid #e0e4e0;
+    margin: 5px 0 15px 0;
+}
+
+select {
+	border: 1px solid #ded6d6;
+    display: block;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background-color: #2b7abd;
+}
+
+input[type=submit]:hover {
+	background-color: #0d5796;
+}
+
+</style>
+
+</head>
+
+<body>
+	<form action="result.jsp">
+		<label>What is your name?</label>
+		<input type="text" name="name">
+		
+		<label>Select your favorite names from the list</label>
+		<select multiple name="names">
+		  <option>Adele</option>
+		  <option>Agnes</option>
+		  <option>Billy</option>
+		  <option>Bob</option>
+		  <option>Calvin</option>
+		  <option>Christina</option>
+		  <option>Cindy</option>
+		</select>
+		
+		<input type="submit">
+	</form>
+</body>
+
+</html>
