@@ -5,13 +5,19 @@
          version="3.1">
          
 	<servlet>
-		<servlet-name>sports teams</servlet-name>
-		<servlet-class>com.jsp.web.SportTeams</servlet-class>
+		<servlet-name>init_param</servlet-name>
+		<servlet-class>com.jsp.web.InitParameters</servlet-class>
+		
+		<init-param>
+			<param-name>email</param-name>
+			<param-value>email@example.com</param-value>
+		</init-param>
+		
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>sports teams</servlet-name>
-		<url-pattern>/teams.sh</url-pattern>
+		<servlet-name>init_param</servlet-name>
+		<url-pattern>/init_param.sh</url-pattern>
 	</servlet-mapping>
          
 </web-app>
