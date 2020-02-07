@@ -5,13 +5,24 @@
          version="3.1">
          
 	<servlet>
-		<servlet-name>sports teams</servlet-name>
-		<servlet-class>com.jsp.web.SportTeams</servlet-class>
+		<servlet-name>dog_servlet</servlet-name>
+		<servlet-class>com.jsp.web.DogServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>sports teams</servlet-name>
-		<url-pattern>/teams.sh</url-pattern>
+		<servlet-name>dog_servlet</servlet-name>
+		<url-pattern>/dogs.sh</url-pattern>
 	</servlet-mapping>
+	
+	<context-param>
+		<param-name>breed</param-name>
+		<param-value>Great Dane</param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>
+			com.jsp.web.ServletContextListener
+		</listener-class>
+	</listener>
          
 </web-app>
