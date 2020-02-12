@@ -5,13 +5,17 @@
          version="3.1">
          
 	<servlet>
-		<servlet-name>sports teams</servlet-name>
-		<servlet-class>com.jsp.web.SportTeams</servlet-class>
+		<servlet-name>session</servlet-name>
+		<servlet-class>com.jsp.web.SessionExample</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>sports teams</servlet-name>
-		<url-pattern>/teams.sh</url-pattern>
+		<servlet-name>session</servlet-name>
+		<url-pattern>/session.sh</url-pattern>
 	</servlet-mapping>
+	
+	<session-config>
+		<session-timeout>2</session-timeout>
+	</session-config>
          
 </web-app>
