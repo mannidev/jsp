@@ -5,13 +5,23 @@
          version="3.1">
          
 	<servlet>
-		<servlet-name>sports teams</servlet-name>
-		<servlet-class>com.jsp.web.SportTeams</servlet-class>
+		<servlet-name>rewrite</servlet-name>
+		<servlet-class>com.jsp.web.UrlRewriting</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>sports teams</servlet-name>
-		<url-pattern>/teams.sh</url-pattern>
+		<servlet-name>rewrite</servlet-name>
+		<url-pattern>/rewrite.sh</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>result</servlet-name>
+		<servlet-class>com.jsp.web.Result</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>result</servlet-name>
+		<url-pattern>/result.sh</url-pattern>
 	</servlet-mapping>
          
 </web-app>
