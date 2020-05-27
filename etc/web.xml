@@ -5,13 +5,23 @@
          version="3.1">
          
 	<servlet>
-		<servlet-name>sports teams</servlet-name>
-		<servlet-class>com.jsp.web.SportTeams</servlet-class>
+		<servlet-name>deploy</servlet-name>
+		<servlet-class>com.jsp.web.Deployment</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>sports teams</servlet-name>
-		<url-pattern>/teams.sh</url-pattern>
+		<servlet-name>deploy</servlet-name>
+		<url-pattern>/hidden.sh</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>hidden-file</servlet-name>
+		<jsp-file>/WEB-INF/hidden.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>hidden-file</servlet-name>
+		<url-pattern>/protected.sh</url-pattern>
 	</servlet-mapping>
          
 </web-app>
